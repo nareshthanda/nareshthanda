@@ -1,0 +1,31 @@
+seconds_in_a_week = 7 * seconds_in_a_day
+seconds_in_a_week
+
+Creating, Reading and Writing with Pandas Library
+
+import pandas as pd
+pd.DataFrame({'Apples': [30], 
+              'Bananas': [21]},
+              index = ('01','02'))
+
+
+
+pd.DataFrame({'Yes': [50, 21], 'No': [131, 2]})
+
+import numpy as np
+import pandas as pd
+
+pd.DataFrame(np.random.rand(20,10))
+
+pd.Series([1,2,3,4])
+
+
+
+pd.Series(['4 Cups', '1 Cup', '2 Large', '1 Can'], index= ['Flour', 'Milk', 'Eggs' , 'Spam'], name='Dinner')
+
+House=pd.read_csv("/content/sample_data/california_housing_train.csv")
+House.head(10)
+
+
+animals = pd.DataFrame({'Cows': [12, 20], 'Goats': [22, 19]}, index=['Year 1', 'Year 2'])
+animals.to_csv("/content/sample_data/animals.csv")
